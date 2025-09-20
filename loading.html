@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+
+  <title>Green Meadows Foundation - Education & Community</title>
+  <meta name="description" content="Green Meadows Foundation is dedicated to education, health, and community development in Gilgit-Baltistan.">
+  <meta name="keywords" content="Green Meadows Foundation, Gilgit Baltistan NGO, Education NGO Pakistan">
+
+<style>
+body, html {
+  margin: 0; padding: 0;
+  height: 100%; width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: column;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* Background image layer */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('image 3.png') center center / cover no-repeat;
+  opacity: 0;
+  animation: bgFade 4s forwards 2s; /* 2s delay for smooth effect */
+  z-index: -1;
+}
+
+@keyframes bgFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.logo {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #2e8b57;
+  opacity: 0;
+  animation: fadeIn 2s forwards, fadeOut 2s forwards 8s;
+}
+
+.tagline {
+  margin-top: 15px;
+  font-size: 1em;
+  color: #151414; /* image ke liye white text better lagega */
+  opacity: 0;
+  max-width: 500px;
+  animation: fadeIn 2s forwards 1s, fadeOut 2s forwards 8s;
+}
+
+.subscribe-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  background: #2e8b57;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeIn 2s forwards 2s, fadeOut 2s forwards 8s;
+  transition: background 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.subscribe-btn:hover { background: #256b45; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; transform: scale(1); }
+  to { opacity: 0; transform: scale(1.05); }
+}
+</style>
+</head>
+<body>
+<div class="logo">🌿 Green Meadows Foundation</div>
+<p class="tagline"> By subscribing and completing this form, a tree will be planted in your name as a symbol of your contribution. 🌿 </p>
+<!-- Subscribe Button -->
+<a href="#" class="subscribe-btn" id="subscribeBtn">Subscribe</a>
+<!-- Hidden Form -->
+<div id="subscribeForm" style="display:none; margin-top:20px;">
+  <form id="form">
+    <input type="text" name="name" placeholder="Your Name" required><br><br>
+    <input type="email" name="email" placeholder="Your Email" required><br><br>
+    <button type="submit" class="subscribe-btn">Submit</button>
+  </form>
+</div>
+
+<script>
+// 10s animation
+setTimeout(() => {
+  window.location.href = "index.html";
+}, 10000);
+
+// form modal
+const btn = document.getElementById('subscribeBtn');
+const formDiv = document.getElementById('subscribeForm');
+
+// Button click shows form
+btn.addEventListener('click', (e) => {
+  e.preventDefault(); // To stop default link behavior
+  formDiv.style.display = 'block';
+});
+
+// Form submission
+document.getElementById('form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  alert('Thank you! Redirecting you to YouTube...');
+  window.location.href = "https://www.youtube.com/@GreenMeadows"; // channel link
+});
+</script>
+</body>
+</html>
