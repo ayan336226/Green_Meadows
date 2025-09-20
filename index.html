@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Green Meadows Foundation</title>
+  <meta name="description" content="Green Meadows Foundation — plantation drives and accessible healthcare services for healthier communities and a greener planet." />
+  <meta property="og:title" content="Green Meadows Foundation"/>
+  <meta property="og:description" content="Plantation • Healthcare • Community Impact"/>
+  <meta property="og:type" content="website"/>
+  <meta name="theme-color" content="#1f6f50"/>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<!-- NAV -->
+<nav class="nav">
+  <div class="container">
+    <div class="nav-row">
+      <!-- Brand -->
+      <a href="#" class="brand" aria-label="Green Meadows Foundation home">
+        <span class="brand-badge" aria-hidden="true">🌿</span>
+        <span>
+          Green Meadows<br/><small>Foundation</small>
+        </span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <div class="menu" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#impact">Impact</a>
+        <a href="#get-involved">Get Involved</a>
+        <a href="#contact">Contact</a>
+        <a href="#donate" class="btn btn-primary">Donate</a>
+      </div>
+
+      <!-- Hamburger (Mobile) -->
+      <button class="hamb btn btn-ghost" id="hamb" aria-expanded="false" aria-controls="mnav">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mnav" role="navigation" aria-label="Mobile">
+      <a href="#about">About</a>
+      <a href="#programs">Programs</a>
+      <a href="#impact">Impact</a>
+      <a href="#get-involved">Get Involved</a>
+      <a href="#contact">Contact</a>
+      <a href="#donate" class="btn btn-primary">Donate</a>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container hero-inner">
+      <div class="hero-grid">
+        <div>
+          <span class="kicker">Plantation • Community</span>
+          <h1>Towards healthier people and a greener planet.</h1>
+          <p class="lead">Green Meadows Foundation runs large‑scale tree plantation drives and delivers accessible healthcare camps in underserved communities. Join us to turn compassion into measurable impact.</p>
+          <div class="cta">
+            <a href="#donate" class="btn btn-primary">Donate Now</a>
+            <a href="#!" class="btn btn-ghost" onclick="openVolunteerForm()">Become a Volunteer</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-live="polite">
+          <div class="stat"><span class="pill">🌳 Trees Planted</span><strong id="trees">0</strong></div>
+          <div class="stat"><span class="pill">🩺 Patients Served</span><strong id="patients">0</strong></div>
+          <div class="stat"><span class="pill">🤝 Volunteers</span><strong id="vols">0</strong></div>
+          <p style="margin:10px 0 0;color:var(--muted)">Real‑time counters showcase our journey. Help us push these numbers higher!</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">Who We Are</h2>
+      <p class="section-sub">Green Meadows Foundation is a non‑profit working at the intersection of environmental restoration and primary healthcare. We plant trees, restore urban green belts, and organize free medical camps to uplift community health.</p>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Our Mission</h3>
+          <p>To create healthy, climate‑resilient neighborhoods by expanding green cover and ensuring basic healthcare access for all.</p>
+        </div>
+        <div class="card">
+          <h3>Our Vision</h3>
+          <p>A future where every family breathes cleaner air, has access to care, and shares responsibility for the planet.</p>
+        </div>
+        <div class="card">
+          <h3>Core Values</h3>
+          <p>Transparency • Inclusion • Sustainability • Dignity • Data‑driven action</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section id="programs">
+    <div class="container">
+      <h2 class="section-title">What We Do</h2>
+      <p class="section-sub">Two flagship programs create compounding impact.</p>
+      <div class="grid cols-3">
+        <div class="card">
+          <span class="tag">Plantation</span>
+          <h3>Urban & Community Plantation</h3>
+          <p>Native tree drives in schools, parks, and highways with after‑care and survival audits. Sponsor a grove or adopt a school lawn.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Healthcare</span>
+          <h3>Mobile Health Camps</h3>
+          <p>Weekly camps offering check‑ups, maternal health guidance, vaccinations, and basic medicines in low‑income areas.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Education</span>
+          <h3>Awareness & Training</h3>
+          <p>Workshops on hygiene, nutrition, climate literacy, and tree care for students, teachers, and local leaders.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section id="impact" style="background:#f6fbf8">
+    <div class="container">
+      <h2 class="section-title">Impact at a Glance</h2>
+      <p class="section-sub">Numbers that tell our community story.</p>
+      <div class="impact">
+        <div class="card"><span class="num" data-target="25000">0</span><span class="label">Trees planted</span></div>
+        <div class="card"><span class="num" data-target="18000">0</span><span class="label">Patients served</span></div>
+        <div class="card"><span class="num" data-target="120">0</span><span class="label">Camps organized</span></div>
+        <div class="card"><span class="num" data-target="950">0</span><span class="label">Active volunteers</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GET INVOLVED -->
+  <section id="get-involved">
+    <div class="container">
+      <h2 class="section-title">Get Involved</h2>
+      <p class="section-sub">Your time, skills, or resources can change lives—and landscapes.</p>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Volunteer</h3>
+          <p>Join weekend plantation, patient registration, pharmacy support, or media & outreach teams.</p>
+          <a href="#!" class="btn btn-ghost" style="margin-top:10px" onclick="openVolunteerForm()">Sign up</a>
+
+        </div>
+        <div class="card" id="donate">
+          <h3>Donate</h3>
+          <p>₹500 plants a sapling with after‑care. ₹1500 supports one patient’s essential medicines at a free camp.</p>
+          <a href="#contact" class="btn btn-primary" style="margin-top:10px">Make a Pledge</a>
+        </div>
+        <div class="card">
+          <h3>Partner</h3>
+          <p>CSR, schools, and city groups can co‑host drives and clinics. Let’s scale together.</p>
+          <button id="openPartnerModal" class="btn btn-ghost" style="margin-top:10px">See more ➡</button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" style="background:#f6fbf8">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-sub">Tell us how you want to help. We’ll get back within 24–48 hours.</p>
+
+      <div class="grid" style="grid-template-columns:1.2fr .8fr; gap:22px">
+        <div class="card">
+          <form onsubmit="event.preventDefault(); alert('Thank you! We\'ll reach out shortly.'); this.reset();">
+            <div class="inline">
+              <input required type="text" placeholder="Full name" aria-label="Full name"/>
+              <input required type="email" placeholder="Email" aria-label="Email"/>
+            </div>
+            <div class="inline">
+              <input type="tel" placeholder="Phone (optional)" aria-label="Phone"/>
+              <input type="text" placeholder="City / Organization" aria-label="City or Organization"/>
+            </div>
+            <textarea placeholder="How would you like to contribute? (volunteer, donate, partner)" aria-label="Message"></textarea>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </form>
+        </div>
+        <div class="card">
+          <h3>Head Office</h3>
+          <p>Green Meadows Foundation<br/>123 Meadow Lane, Westwood, Los Angeles, CA</p>
+          <p><strong>Email:</strong> hello@greenmeadows.org<br/>
+             <strong>Phone:</strong> +1 (000) 123‑4567</p>
+          <div style="height:180px;border-radius:12px;overflow:hidden;margin-top:10px; display: flex; flex-wrap: wrap;">
+            <img src="plant.jfif" alt="Volunteers planting trees" />
+            <img src="plant.jfif" alt="Volunteers planting trees" />
+            <img src="plant.jfif" alt="Volunteers planting trees" />
+             <img src="plant.jfif" alt="Volunteers planting trees" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container" style="display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between">
+      <div style="display:flex;gap:10px;align-items:center">
+        <span class="brand-badge" aria-hidden="true">🌿</span>
+        <div>
+          <strong>Green Meadows Foundation</strong><br/>
+          <small>Plantation • Healthcare • Community</small>
+        </div>
+      </div>
+      <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#impact">Impact</a>
+        <a href="#get-involved">Get Involved</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div><small>© <span id="yr"></span> Green Meadows Foundation. All rights reserved.</small></div>
+    </div>
+  </footer>
+
+
+<!--Vlunteer form Modal -->
+<div id="volunteerModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeVolunteerForm()">&times;</span>
+    <h2>Volunteer Sign Up</h2>
+    <form id="volunteerForm">
+      <label>Full Name</label>
+      <input type="text" name="name" required>
+
+      <label>Email / Phone</label>
+      <input type="text" name="contact" required>
+
+      <label>Area of Interest</label>
+      <select name="interest" required>
+        <option value="">--Select--</option>
+        <option>Plantation</option>
+        <option>Health Camp</option>
+        <option>Pharmacy Support</option>
+        <option>Media & Outreach</option>
+        <option>Admin Support</option>
+      </select>
+
+      <label>Availability</label>
+      <select name="availability" required>
+        <option value="">--Select--</option>
+        <option>Weekends</option>
+        <option>Weekdays</option>
+        <option>Both</option>
+      </select>
+
+      <label>Message</label>
+      <textarea name="message"></textarea>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
+<!-- Partner Modal -->
+<div id="partnerModalNew" class="partner-modal">
+  <div class="partner-modal-content">
+    <span class="close-partner">&times;</span>
+    <div class="partner-box-new">
+      <img id="partnerLogoNew" src="partners/logo1.png" alt="Partner Logo">
+      <h4 id="partnerNameNew">Partner 1</h4>
+    </div>
+    <button class="next-btn-new">&#9654;</button>
+  </div>
+</div>
+
+
+  <script>
+ 
+
+    // Fun counters in hero card
+    function animateValue(el, end, duration){
+      const start = 0; const range = end - start; const startTime = performance.now();
+      function step(now){
+        const p = Math.min((now - startTime)/duration, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.floor(start + eased*range).toLocaleString();
+        if(p<1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+    const trees = document.getElementById('trees');
+    const patients = document.getElementById('patients');
+    const vols = document.getElementById('vols');
+    if(trees&&patients&&vols){
+      animateValue(trees, 25000, 1600);
+      animateValue(patients, 18000, 1600);
+      animateValue(vols, 950, 1600);
+    }
+
+    // Impact section counters on view
+    const nums = document.querySelectorAll('.impact .num');
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          const end = parseInt(e.target.getAttribute('data-target')||'0',10);
+          animateValue(e.target, end, 1600);
+          io.unobserve(e.target);
+        }
+      })
+    },{threshold:0.3});
+    nums.forEach(n=>io.observe(n));
+
+    // Year in footer
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+
+  </script>
+      <script>
+  const hamb = document.getElementById('hamb');
+  const mnav = document.getElementById('mnav');
+
+  hamb.addEventListener('click', () => {
+    mnav.classList.toggle('active');
+    hamb.setAttribute(
+      "aria-expanded",
+      mnav.classList.contains('active') ? "true" : "false"
+    );
+  });
+//   for modal
+function openVolunteerForm() {
+  document.getElementById('volunteerModal').style.display = 'block';
+}
+function closeVolunteerForm() {
+  document.getElementById('volunteerModal').style.display = 'none';   
+}
+// Close modal on outside click
+window.onclick = function(event) {
+  const modal = document.getElementById('volunteerModal');
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+// Partner Modal JS - unique IDs and classes
+const partnerModal = document.getElementById('partnerModalNew');
+const openPartnerBtn = document.getElementById('openPartnerModal');
+const closePartnerBtn = partnerModal.querySelector('.close-partner');
+const nextPartnerBtn = partnerModal.querySelector('.next-btn-new');
+const logoNew = document.getElementById('partnerLogoNew');
+const nameElNew = document.getElementById('partnerNameNew');
+
+const partnersNew = [
+  {logo: 'partners/logo1.png', name: 'Partner 1'},
+  {logo: 'partners/logo2.png', name: 'Partner 2'},
+  {logo: 'partners/logo3.png', name: 'Partner 3'},
+  {logo: 'partners/logo4.png', name: 'Partner 4'},
+  {logo: 'partners/logo5.png', name: 'Partner 5'},
+  {logo: 'partners/logo6.png', name: 'Partner 6'}
+];
+
+let currentPartnerIndex = 0;
+
+openPartnerBtn.onclick = () => partnerModal.style.display = 'flex';
+closePartnerBtn.onclick = () => partnerModal.style.display = 'none';
+
+nextPartnerBtn.onclick = () => {
+  currentPartnerIndex = (currentPartnerIndex + 1) % partnersNew.length;
+  updatePartnerNew();
+};
+
+function updatePartnerNew() {
+  logoNew.src = partnersNew[currentPartnerIndex].logo;
+  nameElNew.textContent = partnersNew[currentPartnerIndex].name;
+}
+
+// Swipe support
+let startXNew = 0;
+let isDraggingNew = false;
+
+const boxNew = partnerModal.querySelector('.partner-box-new');
+
+boxNew.addEventListener('touchstart', e => {
+  startXNew = e.touches[0].clientX;
+  isDraggingNew = true;
+});
+
+boxNew.addEventListener('touchmove', e => {
+  if (!isDraggingNew) return;
+  const x = e.touches[0].clientX;
+  const diff = startXNew - x;
+  if (diff > 50) { // swipe left
+    currentPartnerIndex = (currentPartnerIndex + 1) % partnersNew.length;
+    updatePartnerNew();
+    isDraggingNew = false;
+  } else if (diff < -50) { // swipe right
+    currentPartnerIndex = (currentPartnerIndex - 1 + partnersNew.length) % partnersNew.length;
+    updatePartnerNew();
+    isDraggingNew = false;
+  }
+});   
+
+boxNew.addEventListener('touchend', () => { isDraggingNew = false; });
+
+</script>
+</body>
+</html>
